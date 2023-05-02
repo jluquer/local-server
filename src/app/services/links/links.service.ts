@@ -11,7 +11,11 @@ export class LinksService {
   getLinks(): Link[] {
     const ip = environment.serverIp;
     const basePath = `http://${ip}`;
-    const links = [new Link('Yatch', `${basePath}:8000`)];
+    const links = [
+      new Link('Yacht', `${basePath}:8000`),
+      new Link('Plex', `${basePath}:32400`),
+      new Link('Calibre', `${basePath}:8083`),
+    ];
     return links;
   }
 }
