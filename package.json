@@ -2,9 +2,9 @@
   "name": "local-server",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
+    "ng": "NODE_OPTIONS=--openssl-legacy-provider ng",
     "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve",
-    "build": "ng build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
