@@ -6,8 +6,6 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class LinksService {
-  constructor() {}
-
   getLinks(): Link[] {
     const ip = environment.serverIp;
     const basePath = `http://${ip}`;
